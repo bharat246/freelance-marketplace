@@ -52,20 +52,6 @@ stripe listen --forward-to localhost:5000/api/payments/webhook
 
 Put the shown webhook secret in `STRIPE_WEBHOOK_SECRET`.
 
-## Google OAuth
-
-Create a Google OAuth Web Application in Google Cloud Console.
-
-Authorized JavaScript origin:
-`http://localhost:5173`
-
-Authorized redirect URI:
-`http://localhost:5000/api/auth/google/callback`
-
-Set:
-- `GOOGLE_CLIENT_ID`
-- `GOOGLE_CLIENT_SECRET`
-
 ## Stripe Connect
 
 Freelancers can click "Connect Stripe" from their dashboard. The backend creates a Stripe Express connected account and onboarding link.
